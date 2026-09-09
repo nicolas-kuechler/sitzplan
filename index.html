@@ -6,26 +6,37 @@
   <title>SVG Viewer</title>
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
+
     body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: 100%;
       min-height: 100vh;
       background-color: #ffffff;
+      overflow-x: hidden; 
     }
-    img {
-      max-width: 90vw;
-      max-height: 90vh;
-      width: auto;
-      height: auto;
+
+    .svg-container {
+      width: 100%; 
+      max-width: 1200px; 
+      margin: 0 auto; 
+    }
+
+    .svg-container img {
+      display: block;
+      width: 100%;
+      height: auto; 
+      max-height: none;
     }
   </style>
 </head>
 <body>
-  <img src="sitzplan.svg" alt="Displayed Graphic">
+
+  <div class="svg-container">
+    <img src="sitzplan.svg" alt="Graphic">
+  </div>
+
 </body>
 </html>
