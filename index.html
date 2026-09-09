@@ -11,32 +11,22 @@
       box-sizing: border-box;
     }
 
-    body {
+    html, body {
       width: 100%;
-      min-height: 100vh;
+      min-height: 100%;
       background-color: #ffffff;
-      overflow-x: hidden; 
+      overflow-x: hidden;
     }
 
-    .svg-container {
-      width: 100%; 
-      max-width: 1200px; 
-      margin: 0 auto; 
-    }
-
-    .svg-container img {
+    .full-width-svg {
       display: block;
       width: 100%;
+      max-width: none; 
       height: auto; 
-      max-height: none;
     }
   </style>
 </head>
 <body>
-
-  <div class="svg-container">
-    <img src="sitzplan.svg" alt="Graphic">
-  </div>
-
+  <img src="sitzplan.svg" alt="Graphic" class="full-width-svg">
 </body>
 </html>
